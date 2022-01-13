@@ -7,11 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'list',
+    path: 'movies/list',
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
   {
-    path: 'detail',
+    path: 'movies/detail',
     loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
   }
 ];
